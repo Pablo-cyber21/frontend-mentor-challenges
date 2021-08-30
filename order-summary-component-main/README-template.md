@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screen Shot 2021-08-27 at 00.16.30.png)
+![](https://github.com/Pablo-cyber21/frontend-mentor-challenges/blob/b270e319e65da4efd285a7a66d96287b37d974a4/order-summary-component-main/Screen%20Shot%202021-08-27%20at%2000.16.30.png)
 
 ### Links
 
