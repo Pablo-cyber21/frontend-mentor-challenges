@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* border: 1px solid blue; */
+  border-radius: 30px;
+  padding: 1.66em;
+  background: url("pattern-background-desktop.svg");
+}
+
+.header-image {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 35px 35px 0 0;
+}
+
+.card {
+  text-align: center;
+}
+
+.container {
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 1.44em;
+  /* box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2); */
+  border-radius: 0 0 20px 20px;
+  background-color: white;
+}
+
+h2 {
+  padding: 1.11em;
+  color: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  /* border: 3px solid blue; */
+  /* padding: 2em 1em 2em 1em; */
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  padding: 1.22em;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+.prc {
+  display: flex;
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
+  /* border: 2px solid gray; */
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.77em;
+  padding-top: 10px;
+}
+
+.Pricing-plan {
+  color: black;
+}
+
+.price-change:hover {
+  opacity: 0.88;
+  color: black;
+}
+
+.Annual-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.price-change {
+  padding-left: 20px;
+}
+
+.pay {
+  margin-top: 20px;
+}
+
+.Payment {
+  background-color: blue;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.Payment:hover {
+  opacity: 0.77;
+}
+
+.cancel {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  /* border: 2px solid yellow; */
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+}
+
+.cancel:hover {
+  opacity: 0.66;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 650px) {
+  .card {
+    padding: 50px 200px;
+  }
+}
