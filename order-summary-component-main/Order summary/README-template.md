@@ -54,5 +54,5 @@ The use of also a python web framework is a possibility for this type of project
 
 - Asiimawe Rodrick Pablo.
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Pablo-cyber21](https://www.frontendmentor.io/profile/yourusername)
+- Email - [pasiimawe@gmail.com]
