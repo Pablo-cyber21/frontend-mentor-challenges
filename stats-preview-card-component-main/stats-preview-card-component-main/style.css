@@ -1,3 +1,24 @@
+:root {
+  /*Primary Colors*/
+  --very-dark-blue: hsl(233, 47%, 7%); /*Main Background*/
+  --dark-desaturated-blue: hsl(244, 38%, 16%); /*card background*/
+  --soft-violet: hsl(277, 52%, 48%); /*Accent*/
+
+  /*Neutral Colors*/
+  --white: hsl(0, 0%, 100%); /*Main heading, stats*/
+  --slightly-transparent-white-p: hsla(0, 0%, 100%, 0.75); /*Main Paragraph*/
+  --slightly-transparent-white-h: hsla(0, 0%, 100%, 0.6); /*Stat Headings*/
+
+  /*font-weights*/
+  --bold: 400;
+  --bolder: 700;
+}
+
+/*
+font-family: 'Inter', sans-serif; 400 & 700
+font-family: 'Lexend Deca', sans-serif; 400
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +27,8 @@
 
 body {
   padding: 2em;
-  border: 1px solid black;
   background-color: hsl(233, 47%, 7%);
-}
-
-.image-header {
-  max-width: 100%;
-  width: 100vw;
-  border-radius: 15px 15px 0px 0px;
-  margin-bottom: -5px;
+  height: 93%;
 }
 
 .card {
@@ -32,6 +46,8 @@ body {
   font-weight: 600;
   color: white;
   padding: 1.22em;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 .text {
@@ -41,6 +57,8 @@ body {
 .main-text {
   color: hsla(0, 0%, 100%, 0.75);
   padding: 0.77em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   /* border: 2px solid crimson; */
   margin-top: -20px;
   font-size: 1.11em;
@@ -53,6 +71,18 @@ ul {
   color: hsla(0, 0%, 100%, 0.6);
   text-transform: uppercase;
   font-size: 0.77em;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.img-mobile::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsl(244, 38%, 16%);
+  opacity: 0.88;
 }
 
 .number {
@@ -60,7 +90,13 @@ ul {
   font-size: 2em;
 }
 
-li + li {
+.img-mobile {
+  max-width: 100%;
+  width: 100vw;
+  border-radius: 15px 15px 0px 0px;
+}
+
+li {
   margin-top: 1.88em;
 }
 
@@ -73,3 +109,48 @@ li + li {
 /* - White (main heading, stats): hsl(0, 0%, 100%)
 - Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
 - Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6) */
+
+@media (min-width: 765px) {
+  .main-text,
+  .heading {
+    text-align: left;
+    margin-left: 1.77em;
+    /* border: 2px solid thistle; */
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+  body {
+    display: flex;
+    padding: 8em 4em 4em 4em;
+  }
+  .card {
+    border-radius: 15px 0px 0px 15px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-content {
+    padding: 4em;
+  }
+
+  .image-desktop {
+    max-width: 100%;
+    width: 900px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 765px) {
+  .image {
+    display: none;
+  }
+}
