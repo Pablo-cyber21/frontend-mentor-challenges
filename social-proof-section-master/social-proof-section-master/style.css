@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.client {
+  border: 2px solid red;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
