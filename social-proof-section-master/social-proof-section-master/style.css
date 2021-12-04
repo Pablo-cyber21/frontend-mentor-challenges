@@ -1,6 +1,36 @@
+/* :root{
+
+
+} */
+
+@font-face {
+  font-family: "Spartan";
+  src: url("https://fonts.google.com/specimen/Spartan");
+}
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+section {
+  text-align: center;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  padding: 1em 3em;
+  font-size: 1.77em;
+}
+
+h4 {
+  color: hsl(333, 80%, 67%);
+  /* padding: ; */
+  font-weight: 400;
+  line-height: 1.55em;
+  padding: 0.88em 1.22em;
 }
 
 .client {
