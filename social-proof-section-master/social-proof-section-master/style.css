@@ -21,19 +21,61 @@ section {
 h1 {
   color: hsl(300, 43%, 22%);
   font-weight: 700;
-  padding: 1em 3em;
-  font-size: 1.77em;
+  padding: 1em 3em 0.44em 3em;
+  font-size: 2em;
 }
 
 h4 {
   color: hsl(333, 80%, 67%);
   font-weight: 400;
   line-height: 1.55em;
-  padding: 0.88em 1.22em;
+  padding: 0.55em 1.22em;
+}
+
+span {
+  color: hsl(333, 80%, 67%);
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.accolade {
+  background-color: hsl(300, 24%, 96%);
+  margin: 0.11em 1.88em 0.33em 1.88em;
+  padding: 1.22em;
+  border-radius: 15px;
 }
 
 .client {
   border: 2px solid red;
+  background-color: hsl(300, 43%, 22%);
+  padding: 2.2em;
+  margin: 1.11em;
+  border-radius: 15px;
+}
+
+.client-desc {
+  display: flex;
+  gap: 10px;
+  padding: 1.33em;
+}
+
+.client-name {
+  margin-top: 10px;
+}
+
+.client-img {
+  width: 3.22em;
+  border-radius: 50px;
+}
+
+.Name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.remarks {
+  color: hsl(300, 24%, 96%);
+  line-height: 1.55em;
 }
 
 .attribution {
@@ -43,4 +85,41 @@ h4 {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 810px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;
+    width: 100vw; */
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    margin: 20rem auto;
+    grid-column-gap: 6rem;
+    grid-row-gap: 3rem;
+  }
+
+  h1,
+  h4 {
+    padding: 0;
+    line-height: 2em;
+  }
+
+  .intro {
+    text-align: left;
+    margin-left: 120px;
+    margin-right: 100px;
+  }
 }
