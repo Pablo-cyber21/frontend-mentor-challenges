@@ -133,7 +133,7 @@ span {
   h1,
   h4 {
     padding: 0;
-    line-height: 1.77em;
+    line-height: 1.44em;
   }
 
   .top-container {
@@ -179,11 +179,11 @@ span {
   }
 
   .accolade-2 {
-    margin-left: 2.65em;
+    margin-left: 3em;
   }
 
   .accolade-3 {
-    margin-left: 6.65em;
+    margin-left: 6em;
   }
 
   .testimonials {
@@ -194,11 +194,16 @@ span {
   }
 
   .client-2 {
-    margin-top: 2.44em;
+    margin-top: 3em;
     /* margin: 0 2rem; */
   }
 
   .client-3 {
-    margin-top: 5.44em;
+    margin-top: 6em;
+  }
+
+  .remarks {
+    max-width: 100%;
+    width: 300px;
   }
 }
