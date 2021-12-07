@@ -1,11 +1,18 @@
-/* :root{
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
 
-} */
+  --ark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
 
-@font-face {
-  font-family: "Spartan";
-  src: url("https://fonts.google.com/specimen/Spartan");
+  --spartan: "Spartan", sans-serif;
 }
 
 * {
@@ -14,8 +21,14 @@
   font-family: "Spartan", sans-serif;
 }
 
-section {
-  text-align: center;
+body {
+  width: 100vw;
+  min-width: 375px;
+  min-height: 100vh;
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
 }
 
 h1 {
@@ -38,19 +51,31 @@ span {
   font-size: 15px;
 }
 
+.accolades {
+  text-align: center;
+  font-weight: 500;
+  color: hsl(300, 43%, 22%);
+}
+
+.intro {
+  text-align: center;
+}
+
 .accolade {
   background-color: hsl(300, 24%, 96%);
   margin: 0.11em 1.88em 0.33em 1.88em;
-  padding: 1.22em;
+  padding: 1.1em;
   border-radius: 15px;
 }
 
 .client {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background-color: hsl(300, 43%, 22%);
-  padding: 2.2em;
-  margin: 1.11em;
-  border-radius: 15px;
+  /* padding: 2.22em;
+  margin: 1.11em; */
+  margin: 1rem 1.22em;
+  padding: 3rem 1.75rem;
+  border-radius: 0.5rem;
 }
 
 .client-desc {
@@ -64,8 +89,9 @@ span {
 }
 
 .client-img {
-  width: 3.22em;
-  border-radius: 50px;
+  width: 2.19em;
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 .Name {
@@ -75,7 +101,7 @@ span {
 
 .remarks {
   color: hsl(300, 24%, 96%);
-  line-height: 1.55em;
+  line-height: 1.22em;
 }
 
 .attribution {
@@ -87,39 +113,92 @@ span {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 810px) {
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh;
-    width: 100vw; */
+/* ---------- desktop view ----------- */
+
+@media (min-width: 1120px) {
+  body {
     background-image: url(./images/bg-pattern-top-desktop.svg),
       url(./images/bg-pattern-bottom-desktop.svg);
-    background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
-    width: 100%;
+    background-position: top left, bottom right;
   }
 
   .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: 80%;
-    margin: 20rem auto;
-    grid-column-gap: 6rem;
-    grid-row-gap: 3rem;
+    padding: 0.25rem;
+    width: 80vw;
+    min-height: 75vh;
+    margin: 5rem 0;
   }
 
   h1,
   h4 {
     padding: 0;
-    line-height: 2em;
+    line-height: 1.77em;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2.55em;
   }
 
   .intro {
-    text-align: left;
-    margin-left: 120px;
-    margin-right: 100px;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: start;
+    padding-left: 13%;
+  }
+
+  .intro h4 {
+    width: 95%;
+  }
+
+  .intro h1 {
+    width: 85%;
+    font-size: 2.75rem;
+  }
+
+  /* Magic bullet !! */
+  .accolades {
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+
+  .accolade {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
+
+  .accolade .img-container {
+    margin: 0 1.77rem;
+  }
+
+  .accolade-2 {
+    margin-left: 2.65em;
+  }
+
+  .accolade-3 {
+    margin-left: 6.65em;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 10%;
+  }
+
+  .client-2 {
+    margin-top: 2.44em;
+    /* margin: 0 2rem; */
+  }
+
+  .client-3 {
+    margin-top: 5.44em;
   }
 }
