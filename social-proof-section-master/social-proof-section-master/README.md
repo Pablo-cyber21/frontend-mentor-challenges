@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](.https://github.com/Pablo-cyber21/frontend-mentor-challenges/blob/main/social-proof-section-master/social-proof-section-master/images/Screen%20Shot%202021-12-12%20at%2020.41.34.png)
 
 ### Links
 
