@@ -107,7 +107,7 @@ li {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 826px) {
   .main-text,
   .heading {
     text-align: left;
