@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/Pablo-cyber21/frontend-mentor-challenges/blob/main/social-proof-section-master/social-proof-section-master/images/Screen%20Shot%202021-12-12%20at%2020.41.34.png)
+![](https://github.com/Pablo-cyber21/frontend-mentor-challenges/blob/main/social-proof-section-master/social-proof-section-master/Screenshot%202021-12-20%20at%2009-28-50%20Frontend%20Mentor%20Social%20proof%20section.png)
 
 ### Links
 
