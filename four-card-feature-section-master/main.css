@@ -27,10 +27,6 @@ span {
 p {
   color: hsl(229, 6%, 66%);
 }
-/* main {
-  display: flex;
-  flex-direction: row;
-} */
 
 header {
   text-align: center;
@@ -38,22 +34,60 @@ header {
   margin-bottom: 2.33em;
   font-size: 0.85em;
   padding: 0.5em;
-  /* margin: 1.11em; */
 }
 
 .header-text {
   font-weight: 400;
+  padding-top: 1.33em;
   line-height: 1.77em;
   font-size: 1.11em;
 }
 
+.cards {
+  padding: 2em 1em;
+}
+
 .card {
-  border: 1px solid blueviolet;
-  padding: 1.22em;
+  /* border: 1px solid blueviolet; */
+  padding: 1.88em;
+  border-radius: 10px;
+}
+
+.card-text {
+  font-size: 0.88em;
+}
+
+.card-1 {
+  box-shadow: 0px 3px 5px 5px hsl(229, 6%, 66%);
+  margin-bottom: 20px;
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.card-2 {
+  box-shadow: 0px 3px 5px 5px hsl(229, 6%, 66%);
+  margin-bottom: 20px;
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.card-3 {
+  box-shadow: 0px 3px 5px 5px hsl(229, 6%, 66%);
+  margin-bottom: 20px;
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.card-4 {
+  box-shadow: 0px 3px 5px 5px hsl(229, 6%, 66%);
+  margin-bottom: 20px;
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.card + .card {
+  margin-top: 1.88em;
 }
 
 .image {
   text-align: right;
+  padding: 1.33em;
+  margin-top: 1.99em;
 }
 
 .attribution {
@@ -63,4 +97,36 @@ header {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 980px) {
+  header {
+    width: 100%;
+    max-width: 630px;
+    margin-left: 24%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1.99em;
+    padding: 2em;
+  }
+
+  .card {
+    padding: 1.99em;
+    height: 300px;
+  }
+
+  .card-1 {
+    margin-top: 11em;
+    margin-bottom: 9em;
+    width: 500px;
+  }
+
+  .card-4 {
+    margin-top: 11em;
+    margin-bottom: 9em;
+  }
 }
