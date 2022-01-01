@@ -34,13 +34,13 @@ body {
 h1 {
   color: hsl(300, 43%, 22%);
   font-weight: 700;
-  padding: 1em 3em 0.44em 3em;
+  padding: 1em 2.22em;
   font-size: 2em;
 }
 
 h4 {
   color: hsl(333, 80%, 67%);
-  font-weight: 400;
+  font-weight: 480;
   line-height: 1.55em;
   padding: 0.55em 1.22em;
 }
@@ -53,7 +53,7 @@ span {
 
 .accolades {
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   color: hsl(300, 43%, 22%);
 }
 
@@ -69,10 +69,7 @@ span {
 }
 
 .client {
-  /* border: 2px solid red; */
   background-color: hsl(300, 43%, 22%);
-  /* padding: 2.22em;
-  margin: 1.11em; */
   margin: 1rem 1.22em;
   padding: 3rem 1.75rem;
   border-radius: 0.5rem;
@@ -91,7 +88,7 @@ span {
 .client-img {
   width: 2.19em;
   max-width: 100%;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .Name {
@@ -132,10 +129,13 @@ span {
     margin: 5rem 0;
   }
 
-  h1,
+  h1 {
+    padding: 0;
+  }
+
   h4 {
     padding: 0;
-    line-height: 1.44em;
+    line-height: 1.55em;
   }
 
   /* For the top part to split. */
@@ -143,6 +143,7 @@ span {
     display: flex;
     flex-direction: row;
     padding-bottom: 2.55em;
+    gap: 3em;
   }
 
   .intro {
@@ -150,15 +151,16 @@ span {
     flex-basis: 0;
     text-align: start;
     padding-left: 13%;
+    max-width: 100%;
   }
 
   .intro h4 {
     width: 95%;
   }
 
-  .intro h1 {
+  h1 {
     width: 85%;
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 
   /* Magic bullet to make that flex box work !! */
@@ -166,27 +168,31 @@ span {
     flex-grow: 1;
     flex-basis: 0;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .accolade {
     display: flex;
     flex-direction: row;
-    width: 85%;
+    width: 95%;
     justify-content: flex-start;
-    padding: 1rem 0;
+    padding: 1.1rem 0;
   }
 
   .accolade .img-container {
-    margin: 0 1.77rem;
+    margin: 0 2rem;
   }
 
-  .accolade-2 {
+  .accolade-1 {
     margin-left: 3em;
   }
 
-  .accolade-3 {
+  .accolade-2 {
     margin-left: 6em;
+  }
+
+  .accolade-3 {
+    margin-left: 12em;
   }
 
   .testimonials {
@@ -198,15 +204,16 @@ span {
 
   .client-2 {
     margin-top: 3em;
-    /* margin: 0 2rem; */
   }
 
   .client-3 {
-    margin-top: 6em;
+    margin-top: 4em;
   }
 
   .remarks {
     max-width: 100%;
     width: 300px;
+    font-size: 0.92em;
+    line-height: 1.55em;
   }
 }
